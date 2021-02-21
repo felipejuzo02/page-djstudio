@@ -1,0 +1,218 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Abel', sans-serif;
+}
+
+.container{
+	width: 94%;
+	margin: 0 auto;
+}
+
+
+/*--------------- TELA INICIAL ---------------*/
+.principal{
+	height: 100vh;
+	width: 100%;
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.menu-sup{
+	position: fixed;
+	width: 100%;
+	background-color: black;
+	z-index: 2;
+
+}
+
+.menu-sup .container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
+.menu-sup .container img{
+	width: 50px;
+	cursor: pointer;
+}
+
+.menu-nav ul{
+	list-style: none;
+	position: relative;
+
+}
+
+.menu-nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 0 20px; 
+	position: relative;
+}
+
+.menu-nav ul li:nth-child(4){
+	margin-right: 0;
+}
+
+.menu-nav ul li a{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+}
+
+.menu-nav ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #b50035;
+	position: absolute;
+	left: 0;
+	bottom: -8px;
+	transition: 0.5s;
+}
+
+.menu-nav ul li:hover::after{
+	width: 100%;
+}
+
+.texto-principal{
+	color: white;
+	position: absolute;
+	left: 3%;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: left;
+}
+
+.texto-principal p{
+	font-size: 20px;
+	margin-bottom: 10px
+}
+
+.texto-principal h1{
+	font-size: 80px;
+}
+
+.texto-principal .descritivo-principal{
+	margin-bottom: 40px;
+}
+
+.texto-principal button{
+	width: 160px;
+	border: 0;
+	padding: 12px 10px;
+	outline: none;
+	color: white;
+	background: linear-gradient(to right, #b50035, #660320);
+	border-radius: 10px;
+	font-size: 18px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.texto-principal button img{
+	width: 20px;
+	display: none;
+}
+
+.texto-principal button:hover img{
+	display: block;
+}
+
+.texto-principal button:hover{
+	width: 180px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.social-midia{
+	width: 40px;
+	height: 120px;
+	background: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	transition: 0.5s;
+}
+
+.social-midia img{
+	width: 20px;
+}
+
+.social-midia:hover{
+	width: 60px;
+}
+
+.social-midia img:hover{
+	opacity: 0.6;
+}
+
+/*--------------- CONTEUDO ---------------*/
+main{
+	background-color: #ededed;
+}
+
+.serviços{
+	padding: 40px 0;
+}
+
+.serviços h1{
+	font-size: 40px;
+}
+
+
+
+/*--------------- PORTIFOLIO ---------------*/
+.portifolio{
+	padding: 40px 0;
+}
+
+.portifolio h1{
+	font-size: 40px;
+}
+
+/*--------------- CONTATO ---------------*/
+.contato{
+	padding: 40px 0;
+}
+
+.contato h1{
+	font-size: 40px;
+}
+
+/*--------------- CONTATO ---------------*/
+.rodape{
+	padding: 40px 0;
+}
+
+.rodape .container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.sobre{
+	width: 30%;
+}
+
+.serviços-rodape ul{
+	list-style: none;
+}
+
+.serviços-rodape ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+.serviços-rodape ul li a:hover{
+	text-decoration: underline;
+}
