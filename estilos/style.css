@@ -181,23 +181,116 @@ main{
 	font-size: 40px;
 }
 
+.portifolio p{
+	font-size: 18px;
+}
+
+.lista-portifolio{
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.lista-portifolio li img{
+	width: 400px;
+	border-radius: 15px;
+	margin: 20px 0;
+}
+
+.lista-portifolio li{
+	margin-right: 34px; 
+	transition: .5s;
+
+}
+
+.lista-portifolio li:nth-child(3n){
+	margin-right: 0;
+}
+
+
+.lista-portifolio li:hover{
+	opacity: 0.5;
+}
+
+
 /*--------------- CONTATO ---------------*/
 .contato{
 	padding: 40px 0;
+	background: linear-gradient(to right, #ab0000, #790000);
+	color: white;
+	font-size: 18px;
 }
 
 .contato h1{
 	font-size: 40px;
 }
 
-/*--------------- CONTATO ---------------*/
+.contato-grid{
+	display: flex;
+	margin-top: 25px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.formulario-contato{
+	width: 650px;
+}
+
+.formulario-contato fieldset{
+	border: none;
+}
+
+.formulario-contato fieldset label{
+	display: block;
+	margin-top: 10px;
+}
+
+.formulario-contato fieldset label::after{
+	content: '*';
+}
+
+.formulario-contato fieldset label:nth-child(1){
+	margin-top: 0;
+}
+
+.input-padrao{
+	width: 100%;
+	padding: 7px 15px;
+	box-sizing: border-box;
+}
+
+.formulario-contato fieldset textarea{
+	width: 100%;
+	height: 80px;
+	padding: 7px 15px;
+	box-sizing: border-box; 
+}
+
+.enviar{
+	width: 100px;
+	height: 30px;
+	font-size: 22px;
+	border: none;
+	background-color: white;
+	color: black;
+}
+
+.img-alok img{
+	width: 300px;
+}
+
+/*--------------- FOOTER ---------------*/
 .rodape{
+	margin-top: 20px;
 	padding: 40px 0;
+	background: linear-gradient(to left, #222, #0a0a0a);
+	color: white;
 }
 
 .rodape .container{
 	display: flex;
 	justify-content: space-between;
+	text-align: center;
 }
 
 .sobre{
@@ -210,9 +303,13 @@ main{
 
 .serviços-rodape ul li a{
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 
 .serviços-rodape ul li a:hover{
 	text-decoration: underline;
+}
+
+.realizar-orçamento{
+	
 }
