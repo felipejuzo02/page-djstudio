@@ -5,7 +5,7 @@
 }
 
 .container{
-	width: 94%;
+	width: 1280px;
 	margin: 0 auto;
 }
 
@@ -157,11 +157,12 @@
 	opacity: 0.6;
 }
 
-/*--------------- CONTEUDO ---------------*/
+/*--------------- CORPO GERAL ---------------*/
 main{
 	background-color: #ededed;
 }
 
+/*--------------- SERVIÇOS ---------------*/
 .serviços{
 	padding: 40px 0;
 }
@@ -170,7 +171,54 @@ main{
 	font-size: 40px;
 }
 
+.nossos-djs{
+	margin-top: 40px;
+}
 
+.nossos-djs h2{
+	margin-bottom: 20px;
+}
+
+.lista-djs{
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+.lista-djs li{
+	margin-right: 62px;
+	text-align: center;
+	height: 280px;
+	background-color: red;
+	transition: 1s;
+}
+
+.lista-djs li:nth-child(5){
+	margin-right: 0;
+}
+
+.img-djs{
+	width: 200px;
+	border-radius: 50%;
+	border: 3px solid black;
+}
+
+.saiba-mais{
+	width: 20px;
+	margin: 10px 0;
+	cursor: pointer;
+
+}
+
+.descriçao-djs{
+	position: relative;
+	width: 200px;
+	display: none;
+}
+
+.saiba-mais:hover ~ .descriçao-djs{
+	display: block;
+}
 
 /*--------------- PORTIFOLIO ---------------*/
 .portifolio{
@@ -189,28 +237,63 @@ main{
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .lista-portifolio li img{
-	width: 400px;
+	width: 100%;
 	border-radius: 15px;
-	margin: 20px 0;
+	display: block;
 }
 
 .lista-portifolio li{
-	margin-right: 34px; 
-	transition: .5s;
+	margin-right: 40px; 
+	position: relative;
+	width: 400px;
+	margin: 20px 0;
+}
 
+.descriçao-festa{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: white;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	opacity: 0;
+	border-radius: 15px;
+	transition: opacity 0.5s;
+	text-align: center;
+	padding: 0 5px;
+	box-sizing: border-box;
+}
+
+.descriçao-festa > *{
+	transform: translateY(20px);
+	transition: transform 0.5s;
+}
+
+.descriçao-festa:hover{
+	opacity: 1;
+}
+
+.descriçao-festa:hover > *{
+	transform: translateY(0);
 }
 
 .lista-portifolio li:nth-child(3n){
 	margin-right: 0;
 }
 
-
-.lista-portifolio li:hover{
-	opacity: 0.5;
+.titulo-imagem{
+	font-size: 2em;
 }
+
 
 
 /*--------------- CONTATO ---------------*/
@@ -273,6 +356,14 @@ main{
 	border: none;
 	background-color: white;
 	color: black;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.enviar:hover{
+	background-color: black;
+	color: white;
+	transition: .5s;
 }
 
 .img-alok img{
@@ -282,19 +373,19 @@ main{
 /*--------------- FOOTER ---------------*/
 .rodape{
 	margin-top: 20px;
-	padding: 40px 0;
 	background: linear-gradient(to left, #222, #0a0a0a);
 	color: white;
 }
 
-.rodape .container{
+.rodape .container .rodape-principal{
+	padding: 40px 0;
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
 }
 
 .sobre{
-	width: 30%;
+	width: 250px;
 }
 
 .serviços-rodape ul{
@@ -311,5 +402,22 @@ main{
 }
 
 .realizar-orçamento{
-	
+	margin-top: 25px;
+	border: none;
+	width: 160px;
+	height: 25px;
+	background-color: white;
+	border-radius: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+.realizar-orçamento:hover{
+	background-color: #888888;
+}
+
+.rodape-secundario{
+	text-align: center;
+	padding: 5px 0;
 }
