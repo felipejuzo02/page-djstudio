@@ -143,6 +143,7 @@
 	transform: translateY(-50%);
 	right: 0;
 	transition: 0.5s;
+	z-index: 2;
 }
 
 .social-midia img{
@@ -170,6 +171,23 @@ main{
 
 .serviços h1{
 	font-size: 40px;
+}
+
+.serviços p{
+	font-size: 18px;
+}
+
+.lista-serviços{
+	margin-top: 40px;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.lista-serviços li{
+	width: 600px;
+	margin-bottom: 40px;
+	text-align: justify;
 }
 
 .nossos-djs{
