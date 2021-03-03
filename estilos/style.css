@@ -5,7 +5,7 @@
 }
 
 .container{
-	width: 1280px;
+	max-width: 1280px;
 	margin: 0 auto;
 }
 
@@ -36,8 +36,18 @@
 	padding: 20px 0;
 }
 
-.menu-sup .container img{
+.menu-sup .container .logo{
 	width: 50px;
+	cursor: pointer;
+}
+
+.menu-nav input, .menu-nav label{
+	display: none;
+}
+
+.menu-nav label img{
+	width: 25px;
+	height: 25px;
 	cursor: pointer;
 }
 
@@ -78,6 +88,23 @@
 .menu-nav ul li:hover::after{
 	width: 100%;
 }
+
+.responsivo-icon{
+	display: none;
+	position: absolute;
+	top: 30px;
+	right: 10px;
+}
+
+.responsivo-icon label img{
+	width: 20px;
+	cursor: pointer;
+}
+
+.responsivo-icon input{
+	display: none;
+}
+
 
 .texto-principal{
 	color: white;
@@ -202,16 +229,16 @@ main{
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
+	justify-content: space-around;
 }
 
 .lista-djs li{
-	margin-right: 62px;
 	text-align: center;
+	margin-bottom: 40px;
+	width: 300px;
+	padding: 20px 20px;
 }
 
-.lista-djs li:nth-child(5){
-	margin-right: 0;
-}
 
 .img-djs{
 	width: 200px;
@@ -222,14 +249,7 @@ main{
 .saiba-mais{
 	width: 20px;
 	margin: 10px 0;
-	cursor: pointer;
-	z-index: 3;
 }
-
-.descriçao-djs{
-	width: 200px;
-}
-
 
 
 /*--------------- PORTIFOLIO ---------------*/
@@ -432,4 +452,70 @@ main{
 .rodape-secundario{
 	text-align: center;
 	padding: 5px 0;
+}
+
+@media (max-width: 1350px){
+	.container{
+		width: 95%;
+	}
+
+	.lista-portifolio li{
+		width: 48%;
+	}
+
+	.img-alok{
+		display: none;
+	}
+}
+
+@media (max-width: 858px){
+	.menu-nav label{
+		display: block;
+	}
+
+	.menu-nav ul{
+		position: absolute;
+		top: 79.74px;
+		right: -100%;
+		width: 100%;
+		height: calc(100vh - 79.73px);
+		background-color: #222;
+		transition: .3s;
+	}
+
+	.menu-nav ul li{
+		display: block;
+		margin: 35px 15px;
+		width: 70px;
+	}
+
+	#icon-menu:checked ~ ul{
+		right: 0;
+	}
+
+	/* LISTA DJS */
+	.lista-djs li{
+		width: 48%;
+	}
+
+	/* LISTA DE FESTAS */
+	.lista-portifolio li{
+		width: 100%;
+	}
+
+	/* FOOTER */
+	.rodape-principal{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.serviços-rodape{
+		margin: 25px 0;
+	}
+}
+
+@media (max-width: 480px){
+	.lista-djs li{
+		width: 100%;
+	}
 }
