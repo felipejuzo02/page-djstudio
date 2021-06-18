@@ -212,6 +212,7 @@ main{
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
+
 .lista-serviços li{
 	width: 600px;
 	margin-bottom: 40px;
@@ -326,8 +327,6 @@ main{
 .titulo-imagem{
 	font-size: 2em;
 }
-
-
 
 /*--------------- CONTATO ---------------*/
 .contato{
