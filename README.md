@@ -1,4 +1,4 @@
 <h1> Page - DJ Studio </h1>
-<p>Página em Construção - Falta responsividade</p>
+<p>Minha primeira página completa desenvolvida com HTML e CSS.</p>
 <h2> Visulização </h2>
-<a href="https://felipejuzo02.github.io/page-djstudio/">Visualizar Page</a>
+<a href="https://felipejuzo02.github.io/page-djstudio/">Visualizar Pagina</a>
